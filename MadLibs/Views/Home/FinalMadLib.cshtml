@@ -4,17 +4,23 @@
     <meta charset='utf-8'>
     <title>Mad Lib!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-    <h1>The Adventures of @Model.Name</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="madlibs_img"></div>
+          <h1>The Adventures of @Model.Name</h1>
 
-    <p>
-      You awake in a @Model.Place, dizzy and disoriented. You immediately realize that you are missing your @Model.Thing. You set out to go find it and along the way you run into a @Model.Animal. At first you panic and start to run away, but then it begins talking and you both realize you have a lot in common. It likes @Model.Hobby as well, can you believe it?!
-    </p>
+          <p>
+            You awake in a @Model.Place, dizzy and disoriented. You immediately realize that you are missing your @(Model.Thing). You set out to go find it and along the way you run into a @(Model.Animal). At first you panic and start to run away, but then it begins talking and you both realize you have a lot in common. It likes @Model.Hobby as well, can you believe it?!
+          </p>
 
-    <p>
-      It is then that you realize you don't care if you are missing your @Model.Thing. You and the @Model.Animal frolic away and have a grand time together. The end!
-    </p>
+          <p>
+            It is then that you realize you don't care if you are missing your @(Model.Thing). You and the @Model.Animal frolic away and have a grand time together. The end!
+          </p>
+      </div>
+    </div>
   </body>
 </html>

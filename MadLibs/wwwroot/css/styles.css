@@ -1,0 +1,35 @@
+/* static units */
+/* px -- static value, essential pixels */
+/* pt -- point, this is like pixels, but it more represents the printing */
+/* ch -- width of the character 0, size of a letter */
+
+/* relative measurements */
+/* % - percentage of size based on the parent */
+
+/* relative text measurements */
+/* 
+em - size of font-size in the current context
+rem - size of font-size of the body
+*/
+
+.madlibs_img {
+  background-image: url("https://images.randomhouse.com/cover/9780843198836");
+  background-position-y: -30px;
+  
+  height: 80px;
+  width: 282px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px 0;
+}
+
+body {
+  padding: 50px 0px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}

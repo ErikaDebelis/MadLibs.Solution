@@ -6,15 +6,14 @@ namespace MadLibs.Controllers
   public class HomeController : Controller
   {
     [Route("/")]
-    public ActionResult FinalMadLib ()
+    public ActionResult Form ()
     {
-      return View(new MadLibTemplate(
-        "Gabe", 
-        "Venice", 
-        "phone", 
-        "Monkey", 
-        "knitting" 
-      ));
+      return View();
+    }
+    [Route("/result")]
+    public ActionResult FinalMadLib (MadLibTemplate model)
+    {
+      return View("FinalMadLib", model);
     }
   }
 }

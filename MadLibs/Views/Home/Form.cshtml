@@ -4,26 +4,53 @@
     <meta charset='utf-8'>
     <title>Madlibs!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Fill in the form below to create your unique story!</h1>
-    <form action="/FinalMadLib" method="post">
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="madlibs_img"></div>
 
-      <label for="place">Proper Noun(place)</label>
-      <input id="place" name="place" type="text">
+        <h1>Fill in the form below to create your unique story!</h1>
+        <form action="/result" method="post">
+          <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input id="name" name="name" type="text" class="form-control">
+            </div>
+          </div>
 
-      <label for="thing">noun</label>
-      <input id="thing" name="thing" type="text">
-      
-      <label for="animal">type of animal</label>
-      <input id="animal" name="animal" type="text">
-      
-      <label for="hobby">a hobby</label>
-      <input id="hobby" name="hobby" type="text">
-      
-      <button type="submit">Go!</button>
-    </form>
+          <div class="form-group row">
+            <label for="place" class="col-sm-2 col-form-label">Proper Noun(place)</label>
+            <div class="col-sm-10">
+              <input id="place" name="place" type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="thing" class="col-sm-2 col-form-label">noun</label>
+            <div class="col-sm-10">
+              <input id="thing" name="thing" type="text" class="form-control">
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <label for="hobby" class="col-sm-2 col-form-label">type of animal</label>
+            <div class="col-sm-10">
+              <input id="animal" name="animal" type="text" class="form-control">
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <label for="hobby" class="col-sm-2 col-form-label">a hobby</label>
+            <div class="col-sm-10">
+              <input id="hobby" name="hobby" type="text" class="form-control">
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-info btn-lg btn-block">Go!</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
