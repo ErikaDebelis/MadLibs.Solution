@@ -1,6 +1,6 @@
-﻿namespace MadLibs.Models
+﻿namespace Hangover.Models
 {
-  public class MadLibTemplate
+  public class HangoverTemplate
   {
     public string Name { get; set; }
     public string Place { get; set; }
@@ -8,8 +8,8 @@
     public string Animal { get; set; }
     public string Hobby { get; set; }
 
-    public MadLibTemplate() {}
-    public MadLibTemplate(
+    public HangoverTemplate() {}
+    public HangoverTemplate(
       string name,
       string place,
       string thing,

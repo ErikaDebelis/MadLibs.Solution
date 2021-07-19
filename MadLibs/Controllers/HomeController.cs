@@ -11,9 +11,9 @@ namespace MadLibs.Controllers
       return View();
     }
     [Route("/result")]
-    public ActionResult FinalMadLib (MadLibTemplate model)
+    public ActionResult Hangover (MadLibTemplate model)
     {
-      return View("FinalMadLib", model);
+      return View("Hangover", model);
     }
   }
 }
